@@ -62,35 +62,4 @@ public class MainController {
         logger.info("The person was deleted successfully");
         return new ResponseEntity<>("The person was deleted successfully", HttpStatus.CREATED);
     }
-
-
-//    @GetMapping("Order/{orderId}")
-//    public ResponseEntity<OrderDto> getAllPeople(@RequestHeader String token, @PathVariable("orderId") Integer orderId) {
-//
-//        OrderDto orderDto;
-//        logger.info("Requested a OrderDAO by Id -> Order/" + orderId);
-//        try{
-//            orderDto = orderBusinessLogicService.getAllPeople(orderId);
-//        }catch (Exception e){
-//            logger.info("Error during order requests by id process:");
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//        }
-//        logger.info("The order request was done successfully");
-//        return new ResponseEntity<>(orderDto, HttpStatus.OK);
-//    }
-//
-//    @PostMapping("Orders")
-//    public ResponseEntity<String> requestOrders(@RequestHeader String token, @RequestBody OrderListRestDto orderListRestDto) {
-//
-//        logger.info("Requested a multiple Orders Creation");
-//        try{
-//            orderBusinessLogicService.requestOrders(orderListRestDto.getOrderRestDtos());
-//        }catch (Exception e){
-//            e.printStackTrace();
-//            logger.info("Error during order requests process: " + e.getMessage());
-//            return new ResponseEntity<>("Error: " + e.getMessage(), HttpStatus.BAD_REQUEST);
-//        }
-//        logger.info("The order list was requested successfully");
-//        return new ResponseEntity<>("The order list was requested successfully", HttpStatus.CREATED);
-//    }
 }
